@@ -52,6 +52,14 @@ The dashboard includes:
 
 ---
 
+## 🧠 AI Tool Usage
+
+- Used ChatGPT to scaffold reusable React components, generate Chart.js configuration boilerplate, and design logic for table sorting, filtering, and searching
+- Used GitHub Copilot to autocomplete JSX and repetitive mappings
+- All logic was manually reviewed and customized to meet assignment requirements and match backend structure
+
+---
+
 ## 🚀 Hosted URLs
 
 - **🔗 Frontend (Vercel):** [https://portfolio-frontend-three-zeta.vercel.app](https://portfolio-frontend-three-zeta.vercel.app)
