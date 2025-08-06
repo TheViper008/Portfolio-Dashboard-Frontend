@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+📊 Portfolio Dashboard – Frontend
+This is the React.js frontend for the Portfolio Analytics Dashboard — a single-page dashboard that displays insights about stock portfolio performance. It connects to a Django REST API backend, fetching live data and visualizing it using interactive charts and tables.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🧩 Project Overview
+The dashboard includes:
 
-## Available Scripts
+💼 Overview cards showing total value, investment, and gains/losses
 
-In the project directory, you can run:
+📋 A sortable, filterable, searchable holdings table
 
-### `npm start`
+📊 Allocation pie charts (sector & market cap)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📈 Performance line chart comparing portfolio vs. Nifty50 and Gold
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🏆 Best and worst performing stocks summary
 
-### `npm test`
+✅ Responsive, modern design built with Tailwind CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⚙️ Tech Stack Used
+React.js (CRA)
 
-### `npm run build`
+Axios – API communication
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Chart.js + react-chartjs-2 – Visualizations
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Tailwind CSS – Styling & layout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Vercel – Deployment
 
-### `npm run eject`
+Django REST Framework (backend) – Data source
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🖥️ How to Run Locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   bash
+   Copy
+   Edit
+   git clone https://github.com/YOUR_USERNAME/portfolio-frontend.git
+   cd portfolio-dashboard
+2. Install dependencies:
+   bash
+   Copy
+   Edit
+   npm install
+3. Create .env file:
+   At the root of the project, add:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+env
+Copy
+Edit
+REACT_APP_API_URL=https://portfolio-backend-6il2.onrender.com/api/portfolio 4. Run the app:
+bash
+Copy
+Edit
+npm start
+This will start your frontend on http://localhost:3000 and connect it to your deployed backend.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 Hosted URLs
+🔗 Frontend (Vercel):
+https://portfolio-frontend-three-zeta.vercel.app
 
-## Learn More
+🔗 Backend (Render):
+https://portfolio-backend-6il2.onrender.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✅ Status
+Fully deployed
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Mobile-responsive
 
-### Code Splitting
+Fetching live data from backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Search, sort, filter all working
