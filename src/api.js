@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8000/api/portfolio"; // Use your local backend
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 export const getSummary = async () => {
   try {
@@ -9,6 +9,7 @@ export const getSummary = async () => {
     throw new Error("Failed to load portfolio summary");
   }
 };
+
 export const getHoldings = async () => {
   try {
     return await axios.get(`${BASE_URL}/holdings`);
@@ -16,6 +17,7 @@ export const getHoldings = async () => {
     throw new Error("Failed to load portfolio holdings");
   }
 };
+
 export const getAllocation = async () => {
   try {
     return await axios.get(`${BASE_URL}/allocation`);
@@ -23,6 +25,7 @@ export const getAllocation = async () => {
     throw new Error("Failed to load portfolio allocation");
   }
 };
+
 export const getPerformance = async () => {
   try {
     return await axios.get(`${BASE_URL}/performance`);
